@@ -1,5 +1,5 @@
-const get = require('./get')
+const get = require('./getByCliente')
 
 module.exports = (Conta, router) => {
-  router.get('api/:id_cliente/conta')
+  router.get('/:cliente_id/conta', get(Conta))
 }

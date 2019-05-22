@@ -1,0 +1,42 @@
+INSERT INTO clientes VALUES
+    (4556, 'Maria', '984535692', '51 984387429');
+
+INSERT INTO clientes VALUES
+    (4555, 'Victoria', '546678654', '51 4334322334');
+
+INSERT INTO clientes VALUES
+    (4557, 'Mayu', '55678934567', '51 877745345');
+
+INSERT INTO conta VALUES
+    (300, '1000', '500', '4556');
+
+INSERT INTO conta VALUES
+    (302, '1000', '500', '4557');
+
+INSERT INTO conta VALUES
+    (301, '1000', '500', '4555');
+
+INSERT INTO contatos VALUES
+    (4555, 4556);
+
+INSERT INTO contatos VALUES
+    (4555, 4557);
+
+INSERT INTO contatos VALUES
+    (4556, 4555);
+
+
+INSERT INTO transferencia VALUES
+(1000, 501, 250, current_timestamp, 300, 301);
+
+INSERT INTO transferencia VALUES
+(1000, 501, 200, current_timestamp, 301, 300);
+
+
+
+
+
+select * from clientes;
+select * from conta;
+select * from contatos;
+select * from transferencia;

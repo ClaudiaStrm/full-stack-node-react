@@ -7,5 +7,5 @@ return Cliente.findOne({
 .then(cliente => {
   if (!cliente) return res.send('Não encontrado.')
   res.send(cliente)
-})
+  })
 }

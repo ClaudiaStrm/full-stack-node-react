@@ -15,11 +15,11 @@ const routes = routesInitializer(models)
 
 const startApplication = () => {
   app.use(bodyParser.json())
-  app.use(bodyParser.urlencoded({ extended: true }))
-  app.use('/', routes)
+  app.use(bodyParser.urlencoded({ extended: false }))
+  app.use('/api', routes)
 
-  app.get('/api/mensagem', (req, res) => {
-    res.send({ express: 'Hello From Express' });
+  app.get('/mensagem', (req, res) => {
+    res.send({ express: 'Hello From Express' })
   });
 
   app.listen(PORT, () => {
