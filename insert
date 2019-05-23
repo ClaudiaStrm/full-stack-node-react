@@ -17,23 +17,20 @@ INSERT INTO conta VALUES
     (301, '1000', '500', '4555');
 
 INSERT INTO contatos VALUES
-    (4555, 4556);
+    (200, 4555, 4556);
 
 INSERT INTO contatos VALUES
-    (4555, 4557);
+    (201, 4555, 4557);
 
 INSERT INTO contatos VALUES
-    (4556, 4555);
+    (202. 4556, 4555);
 
 
 INSERT INTO transferencia VALUES
 (1000, 501, 250, current_timestamp, 300, 301);
 
 INSERT INTO transferencia VALUES
-(1000, 501, 200, current_timestamp, 301, 300);
-
-
-
+(1001, 501, 200, current_timestamp, 301, 300);
 
 
 select * from clientes;

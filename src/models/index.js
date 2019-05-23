@@ -12,21 +12,21 @@ module.exports = db => {
   Cliente.hasOne(Conta)
 
   Cliente.belongsToMany( Cliente, {
-    as: 'contato_usuario',
+    as: 'contatoUsuario',
     through: Contato,
-    foreignKey: 'cliente_id'
+    foreignKey: 'clienteId'
   })
 
   Conta.belongsTo(Cliente)
 
   Transferencia.belongsTo(Conta, {
     as: 'depositante',
-    foreignKey: 'id_depositante'
+    foreignKey: 'depositanteId'
   })
 
   Transferencia.belongsTo(Conta, {
       as: 'favorecido',
-      foreignKey: 'id_favorecido'
+      foreignKey: 'favorecidoId'
   })
 
   return { Cliente, Conta, Transferencia, Contato }

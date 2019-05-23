@@ -8,7 +8,7 @@ module.exports = models => {
   clienteRoutes(models.Cliente, router),
   contaRoutes(models.Conta, router),
   contatoRoutes(models.Contato, router),
-  transferenciaRoutes(models.Transferencia, router)
+  transferenciaRoutes(models.Transferencia, models.Conta, router)
 
   return router
 }
